@@ -1,10 +1,12 @@
+# Membuat class film
 class Film:
+    # Constructor untuk membuat object film
     def __init__(self, IdFilm:int, Judul:str, Genre:str, HargaTiket:int, Studio:int):
         self.__IdFilm = int(IdFilm)
         self.__Judul = str(Judul)
         self.__Genre = str(Genre)
-        self.__HargaTiket = str(HargaTiket)
-        self.__Studio = str(Studio)
+        self.__HargaTiket = int(HargaTiket)
+        self.__Studio = int(Studio)
 
     # Setter
     def setIdFilm(self, IdFilm:int) -> None:
