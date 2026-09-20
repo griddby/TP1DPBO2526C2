@@ -92,10 +92,8 @@ TP1DPBO2526C2/
     └── images/
 ```
 
-## 8. Dokumentasi
-
+## 7. Dokumentasi
 ### C++
-
 <table>
 <tr>
 <td><img src="Dokumentasi/CPP/tambah_data_awal_cpp.png" width="300"></td>
@@ -115,7 +113,6 @@ TP1DPBO2526C2/
 </table>
 
 ### Java
-
 <table>
 <tr>
 <td><img src="Dokumentasi/Java/tambah_data_awal_java.png" width="300"></td>
@@ -135,7 +132,6 @@ TP1DPBO2526C2/
 </table>
 
 ### PHP
-
 <table>
 <tr>
 <td><img src="Dokumentasi/PHP/tambah_data_awal_php.png" width="300"></td>
@@ -150,7 +146,6 @@ TP1DPBO2526C2/
 </table>
 
 ### Python
-
 <table>
 <tr>
 <td><img src="Dokumentasi/Python/tambah_data_awal_py.png" width="300"></td>
