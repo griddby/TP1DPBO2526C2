@@ -126,12 +126,15 @@ void UpdateData(){
 
 void DeleteData(){
     cout << "\n-------------- Hapus Data --------------" << endl;
+    // Variabel untuk menyimpan IdFilm yang ingin dihapus
     int IdFilm;
 
     cout << "Masukkan ID Film yang ingin dihapus: "; 
     cin >> IdFilm;
 
+    // Mencari film berdasarkan id
     for (int i = 0; i < jumlahFilm; i++){
+        // Menampilkan data film yang ingin dihapus
         if (daftarFilm[i].getIdFilm() == IdFilm){
             cout << "\nData Film ditemukan!" << endl;
             cout << "ID Film      : " << daftarFilm[i].getIdFilm() << endl;
@@ -144,10 +147,13 @@ void DeleteData(){
             cout << "\nYakin ingin menghapus data ini? (y/n): ";
             cin >> konfirmasi;
 
+            // Mengecek apakah pengguna menyetujui penghapusan
             if (konfirmasi == 'y' || konfirmasi == 'Y'){
+                // Menggeser object setelah data dihapus
                 for (int j = i; j < jumlahFilm - 1; j++){
                     daftarFilm[j] = daftarFilm[j + 1];
                 }
+                // Mengurangi jumlah data karena data telah dihapus
                 jumlahFilm--;
                 cout << "Film berhasil dihapus!" << endl;
             } else {
@@ -159,14 +165,17 @@ void DeleteData(){
     cout << "Film tidak ditemukan." << endl;
 }
 
+// Fungsi untuk menampilkan semua data yang ada 
 void TampilData(){
     cout << "\n========================================" << endl;
     cout << "          DAFTAR SEMUA FILM" << endl;
     cout << "========================================" << endl;
 
+    // Mengecek apakah belum ada data film
     if (jumlahFilm == 0){
         cout << "Belum ada film." << endl;
     } else {
+        // Menampilkan seluruh object film yang tersedia
         for (int i = 0; i < jumlahFilm; i++) {
             cout << "ID Film      : " << daftarFilm[i].getIdFilm() << endl;
             cout << "Judul        : " << daftarFilm[i].getJudul() << endl;
@@ -179,7 +188,9 @@ void TampilData(){
 }
 
 int main(){
+    // Variabel untuk menyimpan pilihan menu dari pengguna
     int pilihan = -1;
+    // Menampilkan menu utama
     while (pilihan != 0){
         cout << "\n========================================" << endl;
         cout << "             MENU BIOSKOP" << endl;
@@ -192,6 +203,7 @@ int main(){
         cout << "0. Keluar" << endl;
         cout << "========================================" << endl;
 
+        // Memanggil fungsi sesuai pilihan
         cout << "Masukkan pilihan: ";
         cin >> pilihan;
         if (pilihan == 1){
