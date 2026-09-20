@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Mengatur bagian header */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Mengatur lebar utama website */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Membuat setiap bagian tampil seperti card */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #1e3a5f;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Mengatur jarak setiap input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Mengatur tampilan input */
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #1e3a5f;
+}
+
+/* Mengatur tombol utama */
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #152d4a;
+}
+
+/* Mengatur tombol sekunder */
+.btn-secondary {
+    display: inline-block;
+    background-color: #777;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+/* Mengatur form pencarian */
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form input {
+    flex: 1;
+}
+
+/* Mengatur bagian judul tabel */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jumlah-data {
+    color: #777;
+}
+
+/* Membuat tabel memenuhi card */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Mengatur tampilan tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f5f7fa;
+}
+
+/* Mengatur gambar film pada tabel */
+.gambar-film {
+    width: 70px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Mengatur judul film */
+.judul-film {
+    font-weight: bold;
+}
+
+/* Mengatur tampilan genre */
+.genre {
+    background-color: #e8eef5;
+    color: #1e3a5f;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* Mengatur tombol edit */
+.btn-edit {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.btn-edit:hover {
+    text-decoration: underline;
+}
+
+/* Mengatur tombol hapus */
+.btn-delete {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    text-decoration: underline;
+}
+
+/* Pesan ketika data kosong */
+.empty {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+/* Mengatur preview gambar saat update */
+.gambar-preview {
+    display: block;
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* Mengatur footer */
+footer {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Menyesuaikan tampilan pada layar kecil */
+@media (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .table-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
